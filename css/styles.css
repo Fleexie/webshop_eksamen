@@ -3,10 +3,12 @@
 * { /* Gælder alt på hele siden */
     -webkit-box-sizing: border-box; /* -webkit- browserunderstøttelse */
     box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen mv. */
+
 }
 
 body {
     margin: 0; /* Ingen kanter i siden af browser */
+    background-color: lemonchiffon;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,12 +34,54 @@ p {
 /* Sikrer billeder er responsive */
 img {
     display: block; /* Billeder er et element (laver linjeskift) */
-    max-width: 100%; /* Bredde må maks fylde 100% */
+    width: 350px; /* Bredde må maks fylde 100% */
     height: auto; /* Højden skal tilpasse sig */
 }
+.header{
+    background-color: cadetblue;
+    height: 60px;
+    cursor: pointer;
+}
+.nav{
+    padding: 10px;
+    list-style: none;
+    font-size: 16pt;
+    display: none;
+    background-color: cadetblue;
+}
+
+i{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 24pt;
+}
+
+.categories{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 
 @media screen and (min-width: 768px) {
     /* Alt der ændres i tablet stående fra mobil */
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .categories{
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        grid-gap: 50px;
+        position: absolute;
+        left: 350px;
+    }
 }
 
 @media screen and (min-width: 992px) {
