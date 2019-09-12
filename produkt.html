@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Kategorier</title>
+    <title>Produkt</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -30,35 +30,39 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 <div class="header">
-<ul class="nav">
-   <li>Forside</li>
-    <li><a href="kategori.html">Kategorier</a></li>
-    <li>Kurv</li>
-</ul>
-<i class="fas fa-bars"></i>
+    <ul class="nav">
+        <li>Forside</li>
+        <li><a href="kategori.html">Kategorier</a></li>
+        <li>Kurv</li>
+    </ul>
+    <i class="fas fa-bars"></i>
+</div>
+<br>
+<div class="produkt">
+    <h1>Grøn Velour Sofa</h1>
+    <img src="images/2pers.jpg" alt="Velour Sofa">
+    <br>
+   <div class="beskrivelse">
+    <h3>Detaljer:</h3>
+    <p>Flot og elegant 2 personers sofa og en rigtig god sidde komfort. Sofaen fås i et utal af opstillinger,
+        så du finder nemt en sofa der passer til dit hjem. Kvaliteten er i top, alle sædehynder er med koldskum (som
+        giver lang holdbarhed og optimal sidde komfort).</p>
+       <br>
+    <h2>Pris: 5800,-</h2>
+   </div>
 </div>
 
-<div class="categories">
-    <a href="sofa-udvalg.html"> <div class="item1">
-    <img src="images/2pers.jpg" alt="2 personers">
-    <h3>2 Personers</h3>
-    </div>
-    </a>
-    <div class="item2">
-    <img src="images/3pers.jpg" alt="3 personers">
-    <h3>3 Personers</h3>
-    </div>
-    <div class="item3">
-    <img src="images/chaiselong.jpg" alt="Chaiselong">
-    <h3>Chaiselong</h3>
-    </div>
+<div class="tilfojvare">
+    <a href=""><h4>Tilføj vare til indkøbskurv</h4></a>
+    <i class="fas fa-shopping-cart"></i>
 </div>
+
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $("i").click(function(){
+    $(document).ready(function () {
+        $("i").click(function () {
             $(".nav").slideToggle("3000");
         });
     });
