@@ -4,10 +4,11 @@
 
 
 - [ ] Forside CTA
-- [ ] Kategori oversigt Sofaer
+- [X] Kategori oversigt Sofaer
 * 3 personers
 * 2 personers
-* Modul
-- [ ] Produktoversigt over 3 personers
+* Chaiselong
+- [X] Produktoversigt over 2 personers
+- [X] Produktoversigt specifik sofa
 - [ ] Indkøbskurv
 - [ ] Købsprocessen
