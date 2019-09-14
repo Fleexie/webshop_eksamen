@@ -53,10 +53,10 @@ a{
 
 }
 .nav{
+    display: none;
     padding: 10px;
     list-style: none;
     font-size: 16pt;
-    display: none;
     background-color: cadetblue;
 }
 
@@ -191,12 +191,45 @@ a{
         justify-content: space-evenly;
     }
 
+    .nav li{
+        display: block;
+    }
+
+    .header i{
+        display: none;
+    }
+
     .categories{
         display: inline-grid;
         grid-template-columns: auto auto;
         grid-gap: 50px;
         position: absolute;
         left: 350px;
+    }
+
+    .produkt img{
+        width: 700px;
+        height: auto;
+    }
+
+    .produkt p{
+        width: 700px;
+    }
+
+    .beskrivelse{
+        margin-left: 370px;
+    }
+
+    .beskrivelse h2{
+        margin-bottom: 20px;
+    }
+
+    .fa-shopping-cart{
+        bottom: 10px;
+    }
+
+    .tilfojvare h4{
+        bottom: 10px;
     }
 }
 
