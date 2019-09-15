@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <meta name="description" content="Beskrivelse">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://kit.fontawesome.com/7d513cd01b.js"></script>
+</head>
+<body>
+
+<header>
+
+</header>
+
+<main>
+    <section class="checkout-container">
+        <form class="paymentoption-form" autocomplete="on">
+            <fieldset>
+                <legend>Betaling</legend>
+                <span>Accepterede kort:</span>
+                <div class="cc-container">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                </div>
+                <label for="Navn">Navn</label><br>
+                <input type="text" id="Navn" placeholder="Navn" class="formInput" name="Name" required> <br>
+                <label for="Kort-nr">Kort nummer</label><br>
+                <input type="text" id="Kort-nr" placeholder="Kort Nummer" class="formInput" name="CardNumber" required><br>
+                <label for="ExpDate">Udløbs måned</label><br>
+                <input type="text" id="ExpDate" placeholder="Udløbs måned" class="formInput" name="ExpMonth" required><br>
+                <label for="ExpYear">Udløbs år</label><br>
+                <input type="text" id="ExpYear" placeholder="Udløbs år" class="formInput" name="ExpYear" required><br>
+                <label for="CVV">CVV</label><br>
+                <input type="text" id="CVV" placeholder="CVV" class="formInput" name="CVV" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Levering</legend>
+                <label for="navn-levering">Fulde navn</label><br>
+                <input type="text" id="navn-levering" placeholder="Fulde navn" class="formInput" name="name" required><br>
+                <label for="adresse">Adresse</label><br>
+                <input type="text" id="adresse" placeholder="Vejnavn samt husnummer" class="formInput" name="address" required><br>
+                <label for="by-navn">By</label><br>
+                <input type="text" id="by-navn" placeholder="By" class="formInput" name="city" required><br>
+                <label for="postnummer">Postnummer</label><br>
+                <input type="text" id="postnummer" placeholder="Postnummer" class="formInput" name="zipcode" required><br>
+                <label for="land">Land</label><br>
+                <input type="text" id="land" placeholder="Land" class="formInput" name="country" required>
+            </fieldset>
+
+        <div class="ToS-Container">
+            <input type="checkbox" id="ToS" class="formToS" name="ToS">
+            <label for="ToS">Klik for at acceptere handelsbetingelser</label>
+        </div>
+
+        <button type="submit" class="checkout-button">Køb</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p class="footer-addresse">Ndr Ringgade xx <br>
+        4200 <br>
+        Slagelse</p>
+
+    <p class="footer-kontakt">
+        <b>Kontakt:</b> <br>
+        <b>TLF:</b> 00000000 <br>
+        <b>Mail:</b> kontakt@sofamaster.dk
+    </p>
+    <p class="cvr">
+        <b>CVR:</b> xxxxxxxxxx
+    </p>
+</footer>
+</body>
+</html>
