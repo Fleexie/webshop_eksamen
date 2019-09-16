@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende Titel</title>
+    <title>Forside</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -27,9 +27,15 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
-<header>
+<div class="header">
+    <ul class="nav">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="kategori.html">Kategorier</a></li>
+        <li><a href="kurv.html">Kurv</a></li>
+    </ul>
+    <i class="fas fa-bars"></i>
+</div>
 
-</header>
 <main>
     <img src="images/banner-sofaer.jpg" alt="Sofaer" class="banner">
     <section>
@@ -46,7 +52,6 @@
             </div>
         </section>
     </a>
-    <p class="se-kategori-text">Du kan se vores sortiment.</p>
 </main>
 <footer>
     <p class="footer-addresse">Ndr Ringgade xx <br>
