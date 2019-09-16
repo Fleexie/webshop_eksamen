@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0; /* Ingen indre margen fra overskrifter */
 }
 
+h1{
+    text-align: center;
+}
+
 ul, ol {
     margin: 0; /* Ingen ydre margen fra lister */
     padding: 0; /* Ingen indre margen fra lister */
@@ -37,26 +41,42 @@ img {
     width: 350px; /* Bredde må maks fylde 100% */
     height: auto; /* Højden skal tilpasse sig */
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .header{
     background-color: cadetblue;
     height: 60px;
-    cursor: pointer;
+
 }
 .nav{
+    display: none;
     padding: 10px;
     list-style: none;
     font-size: 16pt;
-    display: none;
     background-color: cadetblue;
 }
-/*
-i{
+
+i {
+
+}
+.nav :hover{
+    color: white;
+}
+
+.header i{
     position: absolute;
     right: 10px;
     top: 15px;
     font-size: 24pt;
+    cursor: pointer;
 }
-*/
+
+
+
 .categories{
     display: flex;
     align-items: center;
@@ -116,6 +136,7 @@ footer{
     background-color: lightgrey;
     flex-wrap: wrap;
     margin-top: 20px;
+  
 }
 .cvr{
     margin-top: 10px;
@@ -183,13 +204,114 @@ form label{
 .price-hl, .item-price{
     width: 25%;
 }
-.total-container{
+.total-container {
     width: 80%;
     margin: 5px auto;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
+}
+
+.item1{
+    padding: 5px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.item1 :hover{
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+.item2{
+    padding: 5px;
+    margin-top: 5px;
+    border-style: solid;
+}
+
+.item3{
+    padding: 5px;
+    margin-top: 5px;
+    border-style: solid;
+}
+
+.sofa1{
+    padding: 5px;
+    border-style: solid;
+}
+
+.sofa1 :hover{
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+.sofa2{
+    padding: 5px;
+    margin-top: 5px;
+    border-style: solid;
+}
+
+.sofa3{
+    padding: 5px;
+    margin-top: 5px;
+    border-style: solid;
+}
+
+.sofa4{
+    padding: 5px;
+    margin-top: 5px;
+    border-style: solid;
+}
+
+.sofa5{
+    padding: 5px;
+    margin-top: 5px;
+    border-style: solid;
+}
+
+.sofa6{
+    padding: 5px;
+    margin-top: 5px;
+    border-style: solid;
+}
+
+.produkt img{
+    width: 350px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.produkt p{
+    width: 400px;
+}
+
+.beskrivelse{
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.beskrivelse h2{
+    position: absolute;
+    right: 20px;
+}
+
+.fa-shopping-cart{
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    font-size: 20pt;
+}
+
+.tilfojvare h4{
+    position: absolute;
+    text-align: right;
+    right: 60px;
+    bottom: 100px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -201,12 +323,45 @@ form label{
         justify-content: space-evenly;
     }
 
+    .nav li{
+        display: block;
+    }
+
+    .header i{
+        display: none;
+    }
+
     .categories{
         display: inline-grid;
         grid-template-columns: auto auto;
         grid-gap: 50px;
         position: absolute;
         left: 350px;
+    }
+
+    .produkt img{
+        width: 700px;
+        height: auto;
+    }
+
+    .produkt p{
+        width: 700px;
+    }
+
+    .beskrivelse{
+        margin-left: 370px;
+    }
+
+    .beskrivelse h2{
+        margin-bottom: 20px;
+    }
+
+    .fa-shopping-cart{
+        bottom: 10px;
+    }
+
+    .tilfojvare h4{
+        bottom: 10px;
     }
 }
 
