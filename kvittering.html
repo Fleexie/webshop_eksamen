@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <meta name="description" content="Beskrivelse">
+    <meta name="keywords" content="Keywords">
+
+
+    <!-- // Open Graph // -->
+    <meta property="og:title" content="Navn"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="URL"/>
+    <meta property="og:image" content="Billede URL"/>
+    <meta property="og:description" content="Beskrivelse"/>
+    <meta property="og:locale" content="da_DK"/>
+    <!-- // Slut O:G // -->
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/7d513cd01b.js"></script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Import af FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+<header class="header">
+    <ul class="nav">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="kategori.html">Kategorier</a></li>
+        <li><a href="kurv.html">Kurv</a></li>
+    </ul>
+    <i class="fas fa-bars"></i>
+</header>
+
+<main class="receipt">
+    <div class="receipt_check"><i class="fas fa-check-circle"></i></div>
+    <h2 class="center">Tak for dit køb</h2>
+    <h3 class="center">Faktura #xxxxx</h3>
+    <p class="receipt_text">
+        Du vil snarest muligt modtage en email angående din ordrer.
+        Hvis du ikke ser emailen i din indbakke prøv at se i dit spam filter!
+    </p>
+
+    <section class="receipt_container">
+        <div class="receipt_item_img"><img src="images/2pers.jpg" alt=""></div>
+        <h3>Velour Sofa</h3>
+        <span><b>Model nr:</b> xxxxxx</span>
+        <span><b>Farve:</b> Grøn</span>
+        <span><b>Pris:</b> 5800 kr</span>
+    </section>
+
+
+    <a href="index.html">Tilbage til forsiden</a>
+</main>
+
+<footer>
+    <p class="footer-addresse">Ndr Ringgade xx <br>
+        4200 <br>
+        Slagelse</p>
+
+    <p class="footer-kontakt">
+        <b>Kontakt:</b> <br>
+        <b>TLF:</b> 00000000 <br>
+        <b>Mail:</b> kontakt@sofamaster.dk
+    </p>
+    <p class="cvr">
+        <b>CVR:</b> xxxxxxxxxx
+    </p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+</html>
