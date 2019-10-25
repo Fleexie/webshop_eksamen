@@ -18,7 +18,7 @@
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles1.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/7d513cd01b.js"></script>
 
 
@@ -41,11 +41,34 @@
 <br>
 <h1>2 Personers Sofaer</h1>
 
+<div class="sidebar">
+    <p>Filtrér</p><i class="fas fa-arrow-down"></i>
+</div>
+
+<div class="filter">
+    <form>
+        <p>Filtrér søgning:</p>
+        <p>Farver:</p>
+        <input type="checkbox" name="farve2" value="Grøn" class="grøn">Grøn
+        <input type="checkbox" name="farve2" value="Blå" class="blå">Blå
+        <input type="checkbox" name="farve3" value="Sort" class="sort">Sort
+        <input type="checkbox" name="farve4" value="Hvid" class="hvid">Hvid
+        <input type="checkbox" name="farve5" value="Brun" class="brun">Brun
+        <input type="checkbox" name="farve6" value="Beige" class="beige">Beige
+        <br>
+        <br>
+        <button class="hide">Minimer</button>
+        <button class="reset">Nulstil</button>
+    </form>
+</div>
+
 <div class="categories">
-    <a href="produkt.html"><div class="sofa1">
-        <img src="images/2pers.jpg" alt="sofa 1">
-        <h3>Velour</h3>
-    </div></a>
+    <a href="produkt.html">
+        <div class="sofa1">
+            <img src="images/2pers.jpg" alt="sofa 1">
+            <h3>Velour</h3>
+        </div>
+    </a>
     <div class="sofa2">
         <img src="images/2pers2.jpg" alt="sofa 2">
         <h3>Hvidt læder</h3>
@@ -87,6 +110,53 @@
     $(document).ready(function () {
         $("i").click(function () {
             $(".nav").slideToggle("3000");
+        });
+        $(".hide").click(function () {
+            $(".filter").css("display", "none");
+        });
+        $(".sidebar").click(function () {
+            $(".filter").css("display", "block");
+            $(".sidebar").css("display", "none");
+        });
+        $("input.grøn:checkbox").click(function () {
+            $(".sofa1").css("border-color", "red");
+            $("input.grøn:checkbox").click(function () {
+                $(".sofa1").css("border-color", "")
+            })
+        });
+        $("input.blå:checkbox").click(function () {
+            $(".sofa5").css("border-color", "red");
+            $("input.blå:checkbox").click(function () {
+                $(".sofa5").css("border-color", "")
+
+            })
+        });
+        $("input.sort:checkbox").click(function () {
+            $(".sofa4").css("border-color", "red");
+            $("input.sort:checkbox").click(function () {
+                $(".sofa4").css("border-color", "")
+
+            })
+        });
+        $("input.hvid:checkbox").click(function () {
+            $(".sofa2").css("border-color", "red");
+            $("input.hvid:checkbox").click(function () {
+                $(".sofa2").css("border-color", "")
+
+            })
+        });
+        $("input.brun:checkbox").click(function () {
+            $(".sofa6").css("border-color", "red");
+            $("input.brun:checkbox").click(function () {
+                $(".sofa6").css("border-color", "")
+
+            })
+        });
+        $("input.beige:checkbox").click(function () {
+            $(".sofa3").css("border-color", "red");
+            $("input.beige:checkbox").click(function () {
+                $(".sofa3").css("border-color", "")
+            })
         });
     });
 </script>

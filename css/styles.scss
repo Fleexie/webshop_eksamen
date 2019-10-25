@@ -1,54 +1,54 @@
 @import "setup";
 
 /*Mobil*/
-body{
+body {
   background-color: $background;
 
   /*Header*/
-  header{
+  header {
     background-color: $backgroundSecond;
     height: 60px;
-    i{
+    i {
       position: absolute;
       right: 10px;
       top: 15px;
       font-size: 24pt;
       cursor: pointer;
     }
-    ul, .nav{
+    ul, .nav {
       display: none;
       padding: 10px;
       list-style: none;
       font-size: 16pt;
       background-color: $backgroundSecond;
-        li:hover{
-          color: white;
-        }
+      li:hover {
+        color: white;
       }
-    .nav:hover, li:hover{
+    }
+    .nav:hover, li:hover {
       color: white;
     }
   }
 
   /*Index*/
-  .banner{
+  .banner {
     width: 100%;
   }
 
-  .index-hl{
+  .index-hl {
     font-weight: bold;
     margin: 20px auto;
     text-align: center;
   }
-  .intro-text{
+  .intro-text {
     padding: 10px 10%;
     width: 100%;
   }
-  .se-kategori-link{
+  .se-kategori-link {
     text-decoration: none;
     color: black;
 
-    .se-kategori{
+    .se-kategori {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -57,27 +57,27 @@ body{
       background-size: cover;
       background-position: center center;
     }
-    .se-hover{
+    .se-hover {
       width: 100%;
       height: 100%;
       display: flex;
       justify-content: center;
 
-      &:hover{
+      &:hover {
         background: linear-gradient(transparent, rgba(255, 255, 255, 0.67));
       }
-      .se-kategori-hl{
+      .se-kategori-hl {
         align-self: flex-end;
         font-size: xx-large;
       }
     }
   }
-  .se-kategori-text{
+  .se-kategori-text {
     margin: 0 10%;
   }
 
-/*Kategori.html & sofa-udvalg.html*/
-  .categories{
+  /*Kategori.html & sofa-udvalg.html*/
+  .categories {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -86,99 +86,96 @@ body{
     padding: 0 10%;
 
     /*kategori.html*/
-    .item1{
+    .item1 {
       padding: 5px;
       border-style: solid;
       cursor: pointer;
     }
 
-    .item1 :hover{
+    .item1 :hover {
       width: 400px;
       height: auto;
       cursor: pointer;
     }
 
-    .item2, .item3{
+    .item2, .item3 {
       padding: 5px;
       margin-top: 5px;
       border-style: solid;
     }
 
+    /*sofa-udvalg.html*/
+    .sofa1 {
+      padding: 5px;
+      border-style: solid;
+    }
 
-  /*sofa-udvalg.html*/
-  .sofa1{
-    padding: 5px;
-    border-style: solid;
+    .sofa1 :hover {
+      width: 400px;
+      height: auto;
+      cursor: pointer;
+    }
+
+    .sofa2, .sofa3, .sofa4, .sofa5, .sofa6 {
+      padding: 5px;
+      margin-top: 5px;
+      border-style: solid;
+    }
   }
 
-  .sofa1 :hover{
-    width: 400px;
-    height: auto;
-    cursor: pointer;
-  }
-
-  .sofa2, .sofa3, .sofa4, .sofa5, .sofa6{
-    padding: 5px;
-    margin-top: 5px;
-    border-style: solid;
-  }
-}
-
-  .produkt{
-    img{
+  .produkt {
+    img {
       width: 350px;
       height: auto;
       margin-left: auto;
       margin-right: auto;
     }
 
-
-    .beskrivelse{
+    .beskrivelse {
       text-align: justify;
       padding: 0 10%;
       display: flex;
       flex-direction: column;
       margin: 0 0 30px 0;
-      h2{
+      h2 {
         align-self: flex-end;
       }
     }
-}
-  .tilfojvare{
+  }
+  .tilfojvare {
     display: flex;
     justify-content: flex-end;
     padding: 0 10% 0 0;
     width: 100%;
     margin-bottom: 30px;
 
-    .fa-shopping-cart{
+    .fa-shopping-cart {
       font-size: 20pt;
     }
-    h4{
+    h4 {
       text-align: right;
       cursor: pointer;
     }
   }
 
-
   /*kurv.html*/
-  .kurv-hl-container, .kurv-item-container{
+  .kurv-hl-container, .kurv-item-container {
     width: 80%;
     margin: 5px auto;
     display: flex;
     align-items: center;
     height: 100px;
-    background-color: rgba(255,253,231,0.64);
+    background-color: rgba(255, 253, 231, 0.64);
     border-bottom: darkorange solid 1px;
 
-    .item-hl, .item-name{
+    .item-hl, .item-name {
       width: 50%;
       padding-left: 5px;
     }
-    .quantity-hl, .item-quantity{
+    .quantity-hl, .item-quantity {
       width: 25%;
     }
-    .price-hl, .item-price{
+    .price-hl, .item-price {
       width: 25%;
     }
   }
@@ -191,12 +188,12 @@ body{
   }
 
   /*Checkout.html*/
-  .paymentoption-form{
+  .paymentoption-form {
     display: flex;
     flex-direction: column;
     margin: 0 15%;
   }
-  .formInput{
+  .formInput {
     height: 30px;
     border: rgba(255, 197, 37, 0.51) solid;
     padding-left: 10px;
@@ -204,86 +201,86 @@ body{
     width: 100%;
   }
 
-  .fa-cc-mastercard, .fa-cc-visa{
+  .fa-cc-mastercard, .fa-cc-visa {
     position: unset;
     font-size: 20px;
   }
-  form label{
+  form label {
     font-family: sans-serif;
     font-size: 15px;
   }
-  .ToS-Container{
+  .ToS-Container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 0;
   }
-  .formToS{
+  .formToS {
     height: 15px;
     border: rgba(255, 197, 37, 0.51) solid;
     width: 15px;
   }
-  .checkout-button{
+  .checkout-button {
     height: 40px;
     font-size: 25px;
     border-radius: 20px;
     border: rgba(255, 197, 37, 0.51) solid;
     background-color: darkorange;
   }
-  .checkout-button:hover{
+  .checkout-button:hover {
     background-color: #ffc000;
   }
 
   /*Kvittering.html*/
-  .receipt{
+  .receipt {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .receipt_check i{
+    .receipt_check i {
       margin: 20px auto;
       width: 100%;
       text-align: center;
       font-size: 50px;
       color: deepskyblue;
     }
-    .receipt_text{
+    .receipt_text {
       padding: 10px 10%;
     }
-    .receipt_container{
+    .receipt_container {
       width: 100%;
       padding: 10px 5%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      .receipt_item_img{
+      .receipt_item_img {
         width: 80%;
       }
-      h3{
+      h3 {
         text-align: center;
       }
-      span{
+      span {
         margin: 10px 0;
       }
 
     }
-    a{
+    a {
       text-decoration: underline deepskyblue;
       color: deepskyblue;
-      &:hover{
+      &:hover {
         color: dodgerblue;
         text-decoration: underline dodgerblue;
       }
     }
   }
   /*Footer*/
-  footer{
+  footer {
     display: flex;
     padding: 20px 10%;
     justify-content: space-around;
     background-color: lightgrey;
     flex-wrap: wrap;
     margin-top: 20px;
-    .cvr{
+    .cvr {
       margin-top: 10px;
     }
   }
@@ -291,21 +288,21 @@ body{
 
 /*Tablet tall*/
 @media #{$TabletT} {
-  .nav{
+  .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
-  .nav ul li{
+  .nav ul li {
     display: block;
   }
 
-  .fa-bars{
+  .fa-bars {
     display: none;
   }
 
-  .categories{
+  .categories {
     display: inline-grid;
     grid-template-columns: auto auto;
     grid-gap: 50px;
@@ -313,47 +310,47 @@ body{
     left: 350px;
   }
 
-  .produkt img{
+  .produkt img {
     width: 700px;
     height: auto;
   }
 
-  .produkt p{
+  .produkt p {
     width: 700px;
   }
 
-  .beskrivelse{
+  .beskrivelse {
     margin-left: 370px;
   }
 
-  .beskrivelse h2{
+  .beskrivelse h2 {
     margin-bottom: 20px;
   }
 
-  .fa-shopping-cart{
+  .fa-shopping-cart {
     bottom: 10px;
   }
 
-  .tilfojvare h4{
+  .tilfojvare h4 {
     bottom: 10px;
   }
 }
 
 /*Tablet wide*/
 @media #{$TabletW} {
-  .paymentoption-form{
+  .paymentoption-form {
     padding: 0 15%;
   }
 }
 
 /*PC*/
 @media #{$PC} {
-  .se-kategori{
+  .se-kategori {
     height: 450px;
     width: 70%;
     margin: 0 15%;
   }
-  .se-kategori-link{
+  .se-kategori-link {
     width: 70%;
     margin: 0 15%;
   }
