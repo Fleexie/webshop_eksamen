@@ -36,12 +36,18 @@
         <i class="fas fa-bars"></i>
     </header>
     <main>
+        <h1 style="text-align: left; margin-left: 70px;">Din kurv:</h1>
+        <br>
+        <br>
+        <br>
+        <br>
         <section class="kurv-hl-container">
             <div class="item-hl">Varer</div>
             <div class="quantity-hl">Kvantitet</div>
             <div class="price-hl">Pris</div>
         </section>
         <section class="kurv-item-container">
+            <img src="images/2pers.jpg" alt="Velour sofa" class="kurvImg">
             <div class="item-name">Grøn Velour Sofa</div>
             <div class="item-quantity">1</div>
             <div class="item-price">5800 DKR</div>
@@ -51,13 +57,18 @@
         <div class="total-price">5800 kr</div>
         </section>
     </main>
-    <footer>
+    <footer class="betal">
     <button><a href="checkout.html">BETAL NU</a></button>
     </footer>
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/script.min.js"></script>
 </body>
+<script src="js/script.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("i").click(function () {
+            $(".nav").slideToggle("3000");
+        });
+    });
+</script>
 </html>

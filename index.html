@@ -30,7 +30,7 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 <header class="header">
-    <ul class="nav">
+    <ul>
         <li><a href="index.html">Forside</a></li>
         <li><a href="kategori.html">Kategorier</a></li>
         <li><a href="kurv.html">Kurv</a></li>
@@ -69,8 +69,16 @@
         <b>CVR:</b> xxxxxxxxxx
     </p>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/script.min.js"></script>
+
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/script.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("i").click(function () {
+            $("ul").slideToggle("3000");
+        });
+    });
+</script>
 </html>

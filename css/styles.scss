@@ -1,5 +1,8 @@
 @import "setup";
 
+$tablet: "screen and  (min-width: 768px)";
+$computer: "screen and (min-width: 1200px)";
+
 /*Mobil*/
 body {
   background-color: $background;
@@ -8,25 +11,26 @@ body {
   header {
     background-color: $backgroundSecond;
     height: 60px;
+    max-height: 100px;
+    position: relative;
     i {
       position: absolute;
       right: 10px;
       top: 15px;
       font-size: 24pt;
       cursor: pointer;
+      &:hover{
+        color: white;
+      }
     }
-    ul, .nav {
-      display: none;
+    ul {
       padding: 10px;
       list-style: none;
       font-size: 16pt;
       background-color: $backgroundSecond;
-      li:hover {
+      li :hover {
         color: white;
       }
-    }
-    .nav:hover, li:hover {
-      color: white;
     }
   }
 
@@ -125,7 +129,6 @@ body {
 
   .produkt {
     img {
-      width: 350px;
       height: auto;
       margin-left: auto;
       margin-right: auto;
@@ -178,6 +181,10 @@ body {
     .price-hl, .item-price {
       width: 25%;
     }
+    .kurvImg{
+      width: 130px;
+      height: auto;
+    }
   }
   .total-container {
     width: 80%;
@@ -226,9 +233,11 @@ body {
     border-radius: 20px;
     border: rgba(255, 197, 37, 0.51) solid;
     background-color: darkorange;
+    cursor: pointer;
   }
   .checkout-button:hover {
     background-color: #ffc000;
+
   }
 
   /*Kvittering.html*/
@@ -280,28 +289,32 @@ body {
     background-color: lightgrey;
     flex-wrap: wrap;
     margin-top: 20px;
+
     .cvr {
       margin-top: 10px;
     }
   }
+  .betal{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 /*Tablet tall*/
-@media #{$TabletT} {
-  .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+@media #{$tablet} {
 
-  .nav ul li {
-    display: block;
-  }
-
-  .fa-bars {
+  .fa-bars:before{
     display: none;
   }
 
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  
   .categories {
     display: inline-grid;
     grid-template-columns: auto auto;
@@ -337,18 +350,17 @@ body {
 }
 
 /*Tablet wide*/
-@media #{$TabletW} {
+@media #{$tablet} {
   .paymentoption-form {
     padding: 0 15%;
   }
 }
 
 /*PC*/
-@media #{$PC} {
+@media #{$computer} {
   .se-kategori {
     height: 450px;
     width: 70%;
-    margin: 0 15%;
   }
   .se-kategori-link {
     width: 70%;
