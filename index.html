@@ -29,14 +29,14 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
-<header class="header">
+<nav>
+    <i class="fas fa-bars"></i>
     <ul>
         <li><a href="index.html">Forside</a></li>
         <li><a href="kategori.html">Kategorier</a></li>
         <li><a href="kurv.html">Kurv</a></li>
     </ul>
-    <i class="fas fa-bars"></i>
-</header>
+</nav>
 
 <main>
     <img src="images/banner-sofaer.jpg" alt="Sofaer" class="banner">
@@ -77,8 +77,9 @@
 <script>
     $(document).ready(function () {
         $("i").click(function () {
-            $("ul").slideToggle("3000");
+            $("li").slideToggle("500")
         });
+
     });
 </script>
 </html>

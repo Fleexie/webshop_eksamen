@@ -29,14 +29,15 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
-<header class="header">
-    <ul class="nav">
+<nav>
+    <i class="fas fa-bars"></i>
+    <ul>
         <li><a href="index.html">Forside</a></li>
         <li><a href="kategori.html">Kategorier</a></li>
         <li><a href="kurv.html">Kurv</a></li>
     </ul>
-    <i class="fas fa-bars"></i>
-</header>
+
+</nav>
 <br>
 <div class="produkt">
     <h1>Grøn Velour Sofa</h1>
@@ -78,7 +79,8 @@
 <script>
     $(document).ready(function () {
         $("i").click(function () {
-            $(".nav").slideToggle("3000");
+            $("li").slideToggle("500")
+
         });
     });
 </script>

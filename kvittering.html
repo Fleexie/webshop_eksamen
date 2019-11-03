@@ -42,14 +42,15 @@
 
 </head>
 <body>
-<header class="header">
-    <ul class="nav">
+<nav>
+    <i class="fas fa-bars"></i>
+    <ul>
         <li><a href="index.html">Forside</a></li>
         <li><a href="kategori.html">Kategorier</a></li>
         <li><a href="kurv.html">Kurv</a></li>
     </ul>
-    <i class="fas fa-bars"></i>
-</header>
+
+</nav>
 
 <main class="receipt">
     <div class="receipt_check"><i class="fas fa-check-circle"></i></div>
@@ -89,4 +90,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/script.min.js"></script>
 </body>
+<script>
+    $(document).ready(function () {
+        $("i").click(function () {
+            $("li").slideToggle("500")
+
+        });
+    });
+</script>
 </html>

@@ -29,14 +29,15 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
-<header class="header">
-    <ul class="nav">
-       <li><a href="index.html">Forside</a></li>
+<nav>
+    <i class="fas fa-bars"></i>
+    <ul>
+        <li><a href="index.html">Forside</a></li>
         <li><a href="kategori.html">Kategorier</a></li>
         <li><a href="kurv.html">Kurv</a></li>
     </ul>
-    <i class="fas fa-bars"></i>
-</header>
+
+</nav>
 
 <main class="categories">
     <a href="sofa-udvalg.html">
@@ -73,9 +74,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $("i").click(function(){
-            $(".nav").slideToggle("2000");
+    $(document).ready(function () {
+        $("i").click(function () {
+            $("li").slideToggle("500")
+
         });
     });
 </script>
