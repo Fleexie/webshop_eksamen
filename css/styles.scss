@@ -94,8 +94,6 @@ body {
     }
 
     .item1 :hover {
-      width: 400px;
-      height: auto;
       cursor: pointer;
     }
 
@@ -112,8 +110,6 @@ body {
     }
 
     .sofa1 :hover {
-      width: 400px;
-      height: auto;
       cursor: pointer;
     }
 
@@ -122,6 +118,32 @@ body {
       margin-top: 5px;
       border-style: solid;
     }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .filter {
+    position: fixed;
+    background-color: dimgrey;
+    opacity: 0.9;
+    color: white;
+    width: 110px;
+    display: none;
+  }
+
+  .sidebar {
+    background-color: dimgrey;
+    width: 50px;
+    position: fixed;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  .sidebar i {
+    color: white;
   }
 
   .produkt {
@@ -322,8 +344,6 @@ body {
     display: inline-grid;
     grid-template-columns: auto auto;
     grid-gap: 50px;
-    position: absolute;
-    left: 350px;
   }
 
   .produkt img {
@@ -350,6 +370,25 @@ body {
   .tilfojvare h4 {
     bottom: 10px;
   }
+
+  .filter{
+    display: block;
+    width: 150px;
+    height: 1150px;
+    position: absolute;
+    top: 60px;
+    padding-top: 50px;
+    opacity: 0.7;
+
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .hide{
+    display: none;
+  }
 }
 
 /*Tablet wide*/
@@ -369,6 +408,26 @@ body {
   .se-kategori-link {
     width: 70%;
     margin: 0 15%;
+  }
+
+  .categories{
+    width: 50%;
+    margin: 50px auto;
+    .item1, .item2, .item3{
+      width: 90%;
+      margin: 0 auto;
+    }
+    .item1:hover{
+      cursor: pointer;
+      width: 100%;
+    }
+    .sofa{
+      width: 90%;
+      margin: 0 auto;
+    }
+    .sofa1:hover{
+      width: 100%;
+    }
   }
 }
 
